@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # python
 All my scripts are going to be here
 =======
@@ -142,4 +141,3 @@ This project is open source and available under the MIT License.
 ---
 
 **Happy Learning! 🐍✨**
->>>>>>> 37ce1e1 (All my Python work)
