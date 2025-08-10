@@ -126,7 +126,9 @@ Contributions are welcome! Feel free to:
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [GNU General Public License v3.0](LICENSE).
+
+For more information about the GNU GPL v3.0, please see the [LICENSE](LICENSE) file or visit [https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 ## 🆘 Support
 

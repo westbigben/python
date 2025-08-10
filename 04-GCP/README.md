@@ -170,4 +170,8 @@ When adding new scripts:
 
 ## 📄 License
 
-This project is for internal use. Please ensure compliance with your organization's policies and Google Cloud Platform terms of service.
+This project is open source and available under the [GNU General Public License v3.0](LICENSE).
+
+For more information about the GNU GPL v3.0, please see the [LICENSE](LICENSE) file or visit [https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+**Note**: While this project is open source under GPL v3.0, please ensure compliance with your organization's policies and Google Cloud Platform terms of service when using these scripts in production environments.

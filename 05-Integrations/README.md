@@ -229,7 +229,9 @@ The tool is feature-complete, but contributions are welcome for:
 
 ## License
 
-This project is open source. Please check the repository for specific licensing information.
+This project is open source and available under the [GNU General Public License v3.0](LICENSE).
+
+For more information about the GNU GPL v3.0, please see the [LICENSE](LICENSE) file or visit [https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 ## Support
 
