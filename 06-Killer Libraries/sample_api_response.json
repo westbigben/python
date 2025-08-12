@@ -1,0 +1,18 @@
+{
+  "current_user_url": "https://api.github.com/user",
+  "rate": {
+    "limit": 60,
+    "remaining": 58,
+    "reset": 1372700873
+  },
+  "items": [
+    {
+      "id": 1,
+      "name": "demo"
+    },
+    {
+      "id": 2,
+      "name": "sample"
+    }
+  ]
+}
