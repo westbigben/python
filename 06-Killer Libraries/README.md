@@ -1,6 +1,6 @@
 # Python Killer Libraries Demo Collection
 
-A comprehensive collection of Python examples showcasing 9 powerful libraries that every Python developer should know. These are practical, runnable demonstrations designed to teach you the essentials of each library.
+A comprehensive collection of Python examples showcasing 8 powerful external libraries plus 1 essential built-in utility that every Python developer should know. These are practical, runnable demonstrations designed to teach you the essentials of each library and tool.
 
 ## 🚀 Quick Setup
 
@@ -172,17 +172,75 @@ Page title: Example Domain
 
 **Note:** Includes graceful fallback if Playwright isn't properly installed.
 
+### 🔍 **Duplicate IP Detector** - Advanced Log Analysis (Built-in Utility)
+**File:** `duplicate_ip_detector.py`
+
+A professional-grade command-line tool for detecting and analyzing duplicate IP addresses in log files. Perfect for security analysis, traffic monitoring, and system administration.
+
+**Key Features:**
+- Multi-format support (Apache, Nginx, generic logs)
+- IPv4 validation and extraction
+- Statistical analysis with detailed reports
+- CSV export capabilities
+- Line number tracking
+- Configurable thresholds and filtering
+
+**Example Usage:**
+```bash
+# Create sample data for testing
+python3 duplicate_ip_detector.py --create-sample
+
+# Basic analysis
+python3 duplicate_ip_detector.py sample_access.log
+
+# Advanced analysis with filtering
+python3 duplicate_ip_detector.py --min-count 5 --format apache --show-lines access.log
+
+# Export results to CSV
+python3 duplicate_ip_detector.py --output duplicates.csv --top 10 server.log
+```
+
+**Example Output:**
+```
+=============================================================
+🔍 DUPLICATE IP ADDRESS DETECTION REPORT
+=============================================================
+
+📊 STATISTICS:
+   Total lines processed: 10
+   Unique IP addresses: 4
+   Total IP occurrences: 10
+   IPs appearing ≥2 times: 3
+
+🚨 DUPLICATE IPs:
+-------------------------------------------------------------
+   192.168.1.1    |     5 occurrences
+   10.0.0.1       |     2 occurrences
+   203.0.113.1    |     2 occurrences
+-------------------------------------------------------------
+```
+
+**Requirements:** Uses only Python built-in modules (no external dependencies)
+
+**Applications:**
+- Security monitoring and threat detection
+- Network traffic analysis
+- Compliance auditing and reporting
+- Automated log processing in DevOps pipelines
+
 ## 🎯 Interactive Demo Runner
 
 **File:** `run_all_examples.py`
 
-Run all examples in sequence with an interactive prompt between each one.
+Run all library examples in sequence with an interactive prompt between each one.
 
 ```bash
 python3 run_all_examples.py
 ```
 
-This will run each example and wait for you to press Enter before continuing to the next one. Type 'q' and press Enter to quit early.
+This will run each library example and wait for you to press Enter before continuing to the next one. Type 'q' and press Enter to quit early.
+
+**Note:** The duplicate IP detector is a command-line tool that requires arguments, so it's not included in the interactive runner. Use the specific commands shown above to test it.
 
 ## 📁 Sample Data Files
 
@@ -206,11 +264,12 @@ playwright
 
 ## 💡 Usage Tips
 
-1. **Virtual Environment**: Always use a virtual environment to avoid conflicts
+1. **Virtual Environment**: Always use a virtual environment to avoid conflicts with external libraries
 2. **Playwright Setup**: The Playwright example requires browser installation but gracefully handles missing dependencies
 3. **Offline Mode**: The Requests example works offline using fallback data
 4. **Error Handling**: All examples include proper error handling and informative messages
 5. **Cross-Platform**: All examples work on Windows, macOS, and Linux
+6. **Professional Tool**: The duplicate IP detector requires no external dependencies and can be used immediately with any Python 3.6+ installation
 
 ## 🚨 Troubleshooting
 
@@ -228,8 +287,17 @@ If Playwright fails:
 ### Schedule Example
 The schedule example runs quickly for demo purposes. In real applications, you'd typically run the scheduler in a longer loop or as a daemon.
 
+### Duplicate IP Detector Issues
+If the duplicate IP detector fails:
+1. Verify the log file exists and is readable
+2. Try `--format generic` for unknown log formats
+3. Use `--encoding latin1` for legacy files
+4. Check file permissions and path correctness
+5. Use `--create-sample` to generate test data
+
 ## 🎓 Learning Path
 
+### **External Libraries Path**
 1. Start with **Pathlib** and **Requests** - fundamental tools
 2. Learn **Pandas** for data manipulation
 3. Explore **BeautifulSoup** for web scraping
@@ -237,7 +305,10 @@ The schedule example runs quickly for demo purposes. In real applications, you'd
 5. Use **Schedule** for automation tasks
 6. Master **Playwright** for web automation
 
-Each library serves different purposes and together they form a powerful toolkit for Python development!
+### **Professional Tools Path**
+- **Duplicate IP Detector** - Learn advanced log analysis, regex patterns, and command-line tool development using only built-in Python modules
+
+Each library and tool serves different purposes and together they form a powerful toolkit for Python development!
 
 ---
 
