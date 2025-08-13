@@ -31,7 +31,7 @@ Entertainment and educational scripts showcasing:
 - **Turtle Spirograph** - Colorful animated graphics using built-in turtle module
 - **Simple Chatbot** - Rule-based conversational AI
 - **QR Code Generator** - Create QR codes for URLs and text
-- **Duplicate IP Detector** - Log analysis tool for network monitoring
+- **Rich Progress Bars** - Beautiful terminal interfaces
 
 **Prerequisites:** Python 3.6+, external libraries (see requirements.txt)
 
@@ -55,16 +55,8 @@ Professional notification and alerting tool:
 
 **Prerequisites:** Python 3.6+, platform-specific API credentials
 
-### **05-Killer Libraries** - Essential Python Tools
-Demonstration scripts for a duplicate IP detection utility:
-- **Advanced Log Analysis** - Regex-based IP extraction from various log formats
-- **Statistical Reporting** - Detailed occurrence tracking and CSV export
-- **Command-line Interface** - Professional CLI with argparse
-
-**Prerequisites:** Python 3.6+ (uses only built-in modules)
-
 ### **06-Killer Libraries** - Essential Python Libraries
-Comprehensive examples of 9 powerful Python libraries:
+Comprehensive examples of 8 powerful external libraries plus 1 built-in utility:
 - **Pandas** - Data analysis and manipulation
 - **Requests** - HTTP client library
 - **BeautifulSoup** - HTML/XML parsing
@@ -73,6 +65,7 @@ Comprehensive examples of 9 powerful Python libraries:
 - **Rich** - Beautiful terminal output
 - **Schedule** - Job scheduling
 - **Playwright** - Web browser automation
+- **Duplicate IP Detector** - Professional log analysis tool (built-in modules only)
 
 **Prerequisites:** Python 3.6+, virtual environment recommended
 
@@ -90,7 +83,7 @@ Comprehensive examples of 9 powerful Python libraries:
 
 ## 📋 Installation Guide
 
-### Basic Setup (01-Basics, 02-Intermediate, 05-Killer Libraries)
+### Basic Setup (01-Basics, 02-Intermediate)
 ```bash
 # No external dependencies required
 python3 --version  # Verify Python 3.6+
@@ -133,8 +126,8 @@ python3 -m playwright install
 ### **Practical Applications Path**
 Choose directories based on your immediate needs:
 - **Data Analysis:** `06-Killer Libraries` (Pandas, BeautifulSoup)
-- **System Administration:** `04-GCP`, `05-Killer Libraries`
-- **DevOps/Monitoring:** `05-Integrations`, `04-GCP`
+- **System Administration:** `04-GCP`, `06-Killer Libraries` (Duplicate IP Detector)
+- **DevOps/Monitoring:** `05-Integrations`, `04-GCP`, `06-Killer Libraries` (log analysis)
 - **Web Development:** `06-Killer Libraries` (Requests, Playwright)
 
 ## 🔧 Prerequisites by Directory
@@ -146,8 +139,7 @@ Choose directories based on your immediate needs:
 | 03-Fancy | 3.6+ | NumPy, Matplotlib, QRCode | Graphics environment |
 | 04-GCP | 3.7+ | Google Cloud SDK | GCP account, IAM roles |
 | 05-Integrations | 3.6+ | Requests | API credentials |
-| 05-Killer Libraries | 3.6+ | None | None |
-| 06-Killer Libraries | 3.6+ | 9 third-party libraries | Virtual environment |
+| 06-Killer Libraries | 3.6+ | 8 third-party libraries + 1 built-in tool | Virtual environment |
 
 ## 🛡️ Security Notes
 

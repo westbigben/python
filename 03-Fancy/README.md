@@ -8,7 +8,7 @@ This repository contains a variety of Python scripts that showcase different asp
 - **Mathematical Visualizations**: Mandelbrot fractal generation
 - **Graphics & Animation**: Turtle graphics spirograph
 - **Interactive Applications**: Simple rule-based chatbot
-- **Utility Tools**: QR code generation, duplicate IP detection from log files
+- **Utility Tools**: QR code generation, beautiful terminal interfaces
 
 ## 🚀 Installation
 
@@ -79,18 +79,13 @@ pip install qrcode[pil]
 pip install qrcode
 ```
 
-### **duplicate_ip_detector.py**
+### **rich-progress.py**
 **Required Modules:**
-- `re` - Built-in module for regular expressions (no installation needed)
-- `argparse` - Built-in module for command-line argument parsing (no installation needed)
-- `sys` - Built-in system-specific parameters and functions (no installation needed)
-- `collections` - Built-in module for specialized container datatypes (no installation needed)
-- `pathlib` - Built-in module for object-oriented filesystem paths (no installation needed)
-- `typing` - Built-in module for type hints (no installation needed)
+- `rich` - For beautiful terminal progress bars and formatting
 
 **Installation:**
 ```bash
-# No external packages required - uses only built-in Python modules
+pip install rich
 ```
 
 ## 📁 Project Structure
@@ -103,7 +98,7 @@ pip install qrcode
 ├── turtle_spirograph.py       # Colorful spirograph animation
 ├── simple_chatbot.py          # Interactive chatbot
 ├── qr_code_generator.py       # QR code generator
-└── duplicate_ip_detector.py   # Log analysis tool for detecting duplicate IPs
+└── typer-script.py           # Command-line interface examples
 ```
 
 ## 🎮 How to Run
@@ -152,22 +147,17 @@ python qr_code_generator.py
 - Configurable version, box size, and border
 - Default generates QR code for GitHub profile
 
-### Duplicate IP Detector
-Analyze log files to detect duplicate IP addresses:
+### Rich Progress Bars
+Create beautiful terminal interfaces with progress bars:
 ```bash
-python duplicate_ip_detector.py logfile.log
-python duplicate_ip_detector.py --min-count 5 --format apache access.log
-python duplicate_ip_detector.py --output duplicates.csv --show-lines server.log
-python duplicate_ip_detector.py --create-sample  # Create test data
+python rich-progress.py
 ```
 **Features:**
-- Supports Apache, Nginx, and generic log formats
-- Configurable minimum occurrence threshold
-- Detailed statistics and reporting
-- CSV export functionality
-- Line number tracking for duplicate occurrences
-- Built-in sample log generation for testing
-- Command-line interface with comprehensive options
+- Beautiful colored progress bars
+- Real-time progress tracking
+- Multiple progress bar styles
+- Terminal-based rich formatting
+- Cross-platform compatibility
 
 ## 🛠️ Customization
 
@@ -189,14 +179,12 @@ python duplicate_ip_detector.py --create-sample  # Create test data
 - Customize colors with `fill_color` and `back_color`
 - Change the output filename as needed
 
-### Duplicate IP Detector
-- Adjust `--min-count` to change the threshold for duplicate detection
-- Use `--format` to specify log format (apache, nginx, or generic)
-- Add `--show-lines` to display line numbers where IPs appear
-- Use `--top N` to limit output to top N most frequent IPs
-- Specify `--encoding` for different file encodings
-- Customize output with `--output filename.csv` for CSV export
-- Modify regex patterns in the code for custom log formats
+### Rich Progress Bars
+- Modify delay values to change animation speed
+- Customize progress bar colors and styles  
+- Add different types of progress indicators
+- Adjust terminal output formatting
+- Create multiple simultaneous progress bars
 
 ## 🔧 Troubleshooting
 
@@ -229,7 +217,7 @@ python -c "import numpy, matplotlib.pyplot, qrcode, turtle, colorsys, re, argpar
 - **Spirograph**: Animated turtle graphics window with rainbow-colored circular patterns
 - **Chatbot**: Command-line interface for interactive conversation
 - **QR Code**: PNG image file saved as "my_qr_code.png"
-- **Duplicate IP Detector**: Console output with detailed statistics and duplicate IP report, optional CSV export
+- **Rich Progress Bars**: Beautiful colored terminal output with animated progress indicators
 
 ## 🤝 Contributing
 
